@@ -1,7 +1,7 @@
 :root {
   --mainColor: rgb(145, 205, 207);
   --secondaryColor: rgb(51, 54, 61);
-  --fontColor: rgb(69, 89, 120);
+  --fontColor: rgb(68, 88, 119);
 }
 
 * {
@@ -13,6 +13,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  width: 1027px;
 }
 
 h1,
@@ -96,24 +97,133 @@ border: 4px solid var(--mainColor);
 
 main {
   background-color: #EEEEF7;
-  padding: 0 80px;
+  padding: 15px 80px;
 }
 
 .page-section {
   display:flex;
   justify-content: space-between;
   color: var(--fontColor);
+  margin-bottom: 10px;
 }
 
 .page-section h2 {
   font-size: 30px;
-  border-right: 4px solid var(--fontColor);
-  width: 580px;
-  padding: 5px;
+  border-right: 3px solid var(--fontColor);
+  width: 170px;
+  padding-right: 8px;
   text-align: end;
-  flex-grow: 1;
 }
 
 .page-section p, .page-section ul {
   width: 100%;
+}
+
+.workList {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 85px 85px;
+  grid-template-areas: 
+  'surfReport surfReport'
+  'ledWall calculator'
+  'pastelPuzzels runBuddy';
+  grid-gap: 16px;
+}
+
+.surfReport {
+  grid-area: surfReport;
+  background-image: url(/assets/images/02-portfolio-4.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-size: 190%;
+}
+
+.ledWall {
+  grid-area: ledWall;
+  background-image: url(/assets/images/02-portfolio-1.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+}
+
+.calculator {
+  grid-area: calculator;
+  background-image: url(/assets/images/02-portfolio-2.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+}
+
+.pastelPuzzels {
+  grid-area: pastelPuzzels;
+  background-image: url(/assets/images/02-portfolio-3.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+}
+
+.runBuddy {
+  grid-area: runBuddy;
+  background-image: url(/assets/images/02-run-buddy.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+}
+
+.contactList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-position: center;
+  background-size: 100%;
+}
+
+.workList a {
+  border: 3px solid var(--mainColor);
+}
+
+.workInfo {
+  display: inline-block;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: var(--mainColor);
+  color: var(--secondaryColor);
+  font-size: 14px;
+  z-index: 2;
+}
+
+.workInfo p {
+  font-size: 12px;
+}
+
+.workInfo h3 {
+  font-size: 16px;
+}
+
+.project {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.project::after {
+  content: '';
+  /* Create an empty pseudo-element to cover the background with color */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(68, 88, 119, 0.7);
+}
+
+.rightBlock {
+  margin-left: 20px;
+}
+
+.contactLink {
+  color: var(--fontColor);
+  border-bottom: 4px solid var(--fontColor);
 }
