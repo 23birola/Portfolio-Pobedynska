@@ -12,16 +12,18 @@
   <header class='header'>
     <h1>Olha Pobedynska</h1>
     <nav class='navigation'>
-      <ul>
-      <li class='navItem'>
-        <a class='navLink' href="#aboutMe">About me</a>
+      <ul class='nav-list'>
+      <li class='nav-item'>
+        <a class='nav-link' href="#aboutMe">About me</a>
       </li>
-      <li>
-        <a class='navLink' href="#work">Work</a>
-      </li><li>
-        <a class='navLink' href="#contacts">Contact me</a>
-      </li><li>
-        <a class='navLink' href="#">Resume</a>
+      <li class='nav-item'>
+        <a class='nav-link' href="#work">Work</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link' href="#contacts">Contact me</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link' href="#">Resume</a>
       </li>
     </ul>
     </nav>
@@ -29,68 +31,82 @@
 
   <section class='hero-banner'>
     <div class='hero'>
-      <h2>Frontend Developer</h2>
-      <img src="/assets/images/photo.png" class='heroPhoto'alt="portrait">
+      <h2 class='hero-title'>Frontend Developer</h2>
+      <img src="/assets/images/photo.png" class='hero-photo'alt="portrait">
     </div>
   </section>
 
   <main class='page-wrapper'>
 
     <!-- about me -->
-    <section class='page-section aboutMe' id='about'>
-      <!-- portfolio container -->
+    <section class='page-section about-me' id='about'>
       <h2>About Me</h2>
-      <div class='rightBlock'>
+
+      <!-- portfolio container -->
+      <div class='info-wrapper'>
       <p>Hi there! I love building websites that look great and work smoothly. I'm a front-end developer,
       which means I focus on creating the part of websites you interact with directly.</p>
       <p> I'm fascinated by the intersection of design and technology. Turning innovative ideas into interactive, visually
       stunning websites is what I thrive on. I love the challenge of making every pixel count and ensuring seamless
       functionality across different devices. I believe in the power of a great user experience. My approach combines a keen eye for design with a commitment to writing clean, efficient code. I'm not just building websites; I'm creating digital environments that leave a lasting impression.</p>
       </div>
+
     </section>
+
     <section class='page-section' id='work'>
       <h2>Work</h2>
-      <div class='workList rightBlock'>
-            <a class='surfReport project' href="#">
-              <div class='workInfo'>
-                <h3>Surf Report</h3>
-                <p>MERN Stack</p>
-              </div>
-            </a>
-            <a class='ledWall project' href="#">
-              <div class='workInfo'>
-                <h3>LED Wall</h3>
-                <p>Node/IoT</p>
-              </div>
-            </a>
-            <a class='calculator project' href="#">
-              <div class='workInfo'>
-                <h3>Calculator</h3>
-                <p>React/JavaScript/CSS</p>
-              </div>
-            </a>
-            <a class='pastelPuzzels project' href="#">
-              <div class='workInfo'>
-                <h3>Pastel Puzzels</h3>
-                <p>MERN Stack</p>
-              </div>
-            </a>
-            <a class='runBuddy project' href="#">
-              <div class='workInfo'>
-                <h3>Run Buddy</h3>
-                <p>HTML/CSS</p>
-              </div>
-            </a>
+      <div class='work-list info-wrapper'>
+        <a class='surf-report project' href="#">
+          <div class='work-info'>
+            <h3>Surf Report</h3>
+            <p>MERN Stack</p>
+          </div>
+        </a>
+        <a class='led-wall project' href="#">
+          <div class='work-info'>
+            <h3>LED Wall</h3>
+            <p>Node/IoT</p>
+          </div>
+        </a>
+        <a class='calculator project' href="#">
+          <div class='work-info'>
+            <h3>Calculator</h3>
+            <p>React/JavaScript/CSS</p>
+          </div>
+        </a>
+        <a class='pastel-puzzels project' href="#">
+          <div class='work-info'>
+            <h3>Pastel Puzzels</h3>
+            <p>MERN Stack</p>
+          </div>
+         /a>
+         a class='run-buddy project' href="#">
+          <div class='work-info'>
+            <h3>Run Buddy</h3>
+            <p>HTML/CSS</p>
+          </div>
+         /a>
       </div>
     </section>
+
     <section class='page-section' id='contact'>
       <h2>Contact Me</h2>
-      <ul class='contactList rightBlock'>
-          <li><a class='contactLink' type='tel' href='+447774111111'>+44 7774 111 111</a></li>
-          <li><a class='contactLink' type='email' href="23birola@gmail.com">23birola@gmail.com</a></li>
-          <li><a class='contactLink' type='tel' href='https://github.com/23birola'>GitHub</a></li>
-          <li><a class='contactLink' href="#">Twitter</a></li>
-          <li><a class='contactLink' href="#">Spotify</a></li>
+      <ul class='contact-list info-wrapper'>
+        <li>
+          <a class='contact-link' type='tel' href='+447774111111'>+44 7774 111 111</a>
+        </li>
+        <li>
+          <a class='contact-link' type='email' href="23birola@gmail.com">23birola@gmail.com</a>
+        </li>
+        <li>
+          <a class='contact-link' type='tel' href='https://github.com/23birola'>GitHub</a>
+        </li>
+        <li>
+          <a class='contact-link' href="#">Twitter</a>
+        </li>
+        <li>
+          <a class='contact-link' href="#">Spotify</a>
+        </li>
       </ul>
     </section>
   </main>

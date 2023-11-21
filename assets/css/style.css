@@ -47,7 +47,7 @@ h1 {
   margin-left: 0;
 }
 
-.header nav ul li {
+.nav-item {
   display: inline-block;
   font-size: 20px;
   border-bottom: 2px solid var(--mainColor);
@@ -55,12 +55,12 @@ h1 {
   margin-right: 10px;
 }
 
-.navLink {
+.nav-link {
   color: var(--mainColor);
   padding: 10px;
 }
 
-.navLink a:hover, nav a:focus {
+.nav-link a:hover, nav a:focus {
   background-color: var(--mainColor);
   color: var(--secondaryColor);
 }
@@ -80,7 +80,7 @@ h1 {
   align-items: flex-end;
 }
 
-.hero h2 {
+.hero-title {
   margin-left: 150px;
   color: var(--secondaryColor);
   font-size: 20px;
@@ -91,13 +91,13 @@ h1 {
   background-color: var(--mainColor);
 }
 
-.hero img {
-border-radius: 50%;
-object-fit: cover;
-margin: 20px 70px 20px 20px;
-height: 150px;
-width: 150px;
-border: 4px solid var(--mainColor);
+.hero-photo {
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 70px 20px 20px;
+  height: 150px;
+  width: 150px;
+  border: 4px solid var(--mainColor);
 }
 
 .page-wrapper {
@@ -121,38 +121,38 @@ border: 4px solid var(--mainColor);
   text-align: end;
 }
 
-.aboutMe p {
+.about-me p {
   margin-bottom: 5px;
   font-size: 12px;
 }
 
-.rightBlock {
+.info-wrapper {
   margin-left: 20px;
   width: 100%;
 }
 
-.workList {
+.work-list {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 85px 85px;
   grid-template-areas: 
-  'surfReport surfReport'
-  'ledWall calculator'
-  'pastelPuzzels runBuddy';
+  'surf-report surf-report'
+  'led-wall calculator'
+  'pastel-puzzels run-buddy';
   grid-gap: 16px;
 }
 
-.surfReport {
-  grid-area: surfReport;
+.surf-report {
+  grid-area: surf-report;
   background-image: url(/assets/images/02-portfolio-4.jpg);
   object-fit: contain;
   background-position: center;
   background-size: 190%;
 }
 
-.ledWall {
-  grid-area: ledWall;
+.led-wall {
+  grid-area: led-wall;
   background-image: url(/assets/images/02-portfolio-1.jpg);
   object-fit: contain;
   background-position: center;
@@ -167,27 +167,27 @@ border: 4px solid var(--mainColor);
   background-size: 100%;
 }
 
-.pastelPuzzels {
-  grid-area: pastelPuzzels;
+.pastel-puzzels {
+  grid-area: pastel-puzzels;
   background-image: url(/assets/images/02-portfolio-3.jpg);
   object-fit: contain;
   background-position: center;
   background-size: 100%;
 }
 
-.runBuddy {
-  grid-area: runBuddy;
+.run-buddy {
+  grid-area: run-buddy;
   background-image: url(/assets/images/02-run-buddy.jpg);
   object-fit: contain;
   background-position: center;
   background-size: 100%;
 }
 
-.workList a {
+.work-wist a {
   border: 3px solid var(--mainColor);
 }
 
-.workInfo {
+.work-info {
   display: inline-block;
   height: auto;
   margin-bottom: 10px;
@@ -198,7 +198,7 @@ border: 4px solid var(--mainColor);
   z-index: 2;
 }
 
-.workInfo p {
+.work-info p {
   font-size: 12px;
 }
 
@@ -223,7 +223,7 @@ border: 4px solid var(--mainColor);
   background-color: rgba(68, 88, 119, 0.7);
 }
 
-.contactList {
+.contact-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -231,13 +231,13 @@ border: 4px solid var(--mainColor);
   background-size: 100%;
 }
 
-.contactLink {
+.contact-link {
   color: var(--fontColor);
   border-bottom: 4px solid var(--fontColor);
   padding-bottom: 3px;
 }
 
-.contactLink:hover, .contactLink:focus {
+.contact-link:hover, .contact-link:focus {
   background-color: var(--fontColor);
   color: var(--mainColor);
 }
@@ -251,6 +251,37 @@ border: 4px solid var(--mainColor);
     padding: 15px;
   }
 
+  .header{ 
+    display: block;
+  }
+  
+  h1 {
+    display:inline-block;
+    padding: 3px;
+    margin-bottom: 9px;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    margin-right: 5px;
+  }
+
+ .nav-link {
+    padding: 6px;
+  }
+
+  .hero img {
+    margin: 15px 40px 15px 15px;
+  }
+
+  .hero-title {
+    margin: 0 40px 15px 0;
+  }
+ 
   .page-section {
     display: inline-block;
     width: 100%;
@@ -263,21 +294,21 @@ border: 4px solid var(--mainColor);
     width: auto;
   }
 
-    .rightBlock {
-      margin: 0px;
-    }
+  .info-wrapper {
+    margin: 0px;
+  }
 
-    .workList {
+  .work-list {
    width: 100%;
-    }
+  }
 
-  .contactList {
+  .contact-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .contactList li {
+  .contact-list li {
     margin: 10px 15px;
   }
 }
