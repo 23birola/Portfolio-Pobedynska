@@ -123,6 +123,7 @@ border: 4px solid var(--mainColor);
 
 .aboutMe p {
   margin-bottom: 5px;
+  font-size: 12px;
 }
 
 .rightBlock {
@@ -153,7 +154,7 @@ border: 4px solid var(--mainColor);
 .ledWall {
   grid-area: ledWall;
   background-image: url(/assets/images/02-portfolio-1.jpg);
-  object-fit: cover;
+  object-fit: contain;
   background-position: center;
   background-size: 100%;
 }
@@ -161,7 +162,7 @@ border: 4px solid var(--mainColor);
 .calculator {
   grid-area: calculator;
   background-image: url(/assets/images/02-portfolio-2.jpg);
-  object-fit: cover;
+  object-fit: contain;
   background-position: center;
   background-size: 100%;
 }
@@ -169,7 +170,7 @@ border: 4px solid var(--mainColor);
 .pastelPuzzels {
   grid-area: pastelPuzzels;
   background-image: url(/assets/images/02-portfolio-3.jpg);
-  object-fit: cover;
+  object-fit: contain;
   background-position: center;
   background-size: 100%;
 }
@@ -177,7 +178,7 @@ border: 4px solid var(--mainColor);
 .runBuddy {
   grid-area: runBuddy;
   background-image: url(/assets/images/02-run-buddy.jpg);
-  object-fit: cover;
+  object-fit: contain;
   background-position: center;
   background-size: 100%;
 }
@@ -239,4 +240,44 @@ border: 4px solid var(--mainColor);
 .contactLink:hover, .contactLink:focus {
   background-color: var(--fontColor);
   color: var(--mainColor);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width:auto;
+  }
+
+  .page-wrapper {
+    padding: 15px;
+  }
+
+  .page-section {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .page-section h2 {
+    border-bottom: 3px solid var(--fontColor);
+    border-right: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+    .rightBlock {
+      margin: 0px;
+    }
+
+    .workList {
+   width: 100%;
+    }
+
+  .contactList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contactList li {
+    margin: 10px 15px;
+  }
 }
