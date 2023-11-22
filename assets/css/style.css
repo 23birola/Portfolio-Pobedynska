@@ -323,6 +323,7 @@ h1 {
     margin: 10px 15px;
   }
   
-  .project:hover {
-    transform: none;
+  .project {
+    pointer-events: none;
+  }
 }
