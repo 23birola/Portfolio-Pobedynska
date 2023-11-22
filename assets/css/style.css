@@ -322,4 +322,7 @@ h1 {
   .contact-list li {
     margin: 10px 15px;
   }
+  
+  .project:hover {
+    transform: none;
 }
