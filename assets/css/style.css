@@ -73,7 +73,7 @@ h1 {
 
 .hero-banner {
   width: 100%;
-  background-image: url("../../../Portfolio-Pobedynska/assets/images/02-hero-bg.jpg");
+  background-image: url("../../../portfolio-pobedynska/assets/images/02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-color: var(--main-color);
@@ -152,7 +152,7 @@ h1 {
 
 .surf-report {
   grid-area: surf-report;
-  background-image: url(../../../Portfolio-Pobedynska/assets/images/02-portfolio-4.jpg);
+  background-image: url(../../../portfolio-pobedynska/assets/images/02-portfolio-4.jpg);
   object-fit: contain;
   background-position: center;
   background-size: 190%;
@@ -160,7 +160,7 @@ h1 {
 
 .led-wall {
   grid-area: led-wall;
-  background-image: url(../../../Portfolio-Pobedynska/assets/images/02-portfolio-1.jpg);
+  background-image: url(../../../portfolio-pobedynska/assets/images/02-portfolio-1.jpg);
   object-fit: contain;
   background-position: center;
   background-size: 100%;
@@ -168,7 +168,7 @@ h1 {
 
 .calculator {
   grid-area: calculator;
-  background-image: url(../../../Portfolio-Pobedynska/assets/images/02-portfolio-2.jpg);
+  background-image: url(../../../portfolio-pobedynska/assets/images/02-portfolio-2.jpg);
   object-fit: contain;
   background-position: center;
   background-size: 100%;
@@ -176,7 +176,7 @@ h1 {
 
 .pastel-puzzels {
   grid-area: pastel-puzzels;
-  background-image: url(../../../Portfolio-Pobedynska/assets/images/02-portfolio-3.jpg);
+  background-image: url(../../../portfolio-pobedynska/assets/images/02-portfolio-3.jpg);
   object-fit: contain;
   background-position: center;
   background-size: 100%;
@@ -184,7 +184,7 @@ h1 {
 
 .run-buddy {
   grid-area: run-buddy;
-  background-image: url(../../../Portfolio-Pobedynska/assets/images/02-run-buddy.jpg);
+  background-image: url(../../../portfolio-pobedynska/assets/images/02-run-buddy.jpg);
   object-fit: contain;
   background-position: center;
   background-size: 100%;
