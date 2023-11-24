@@ -8,7 +8,7 @@ I'd like to represent you my portfolio, which showcase my skills, work samples a
 
 ![project outline](assets/images/project-outline.png)
 
-**Here is the link to this project** https://github.com/23birola/Portfolio-Pobedynska
+**Here is the link to this project** https://23birola.github.io/portfolio-pobedynska/
 
 **Here is the project screenshot**
 
